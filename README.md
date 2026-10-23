@@ -1,4 +1,5 @@
-﻿# Geek Finder
+
+# Geek Finder
 
 Mapa de tiendas de videojuegos, figuras y cartas. Es una aplicación movil pensada para la comunidad gamer
 y coleccionista. La aplicación es un mapa de tiendas y puntos de interes relacionados en forma mapa colaborativo
@@ -26,3 +27,15 @@ de usuarios.
 
 ### Detalle de tienda
 ![alt text](Mockups/pantalla-3.png)
+
+### Formulario tienda
+![alt text](Mockups/pantalla-4.png)
+
+### Nueva reseña
+![alt text](Mockups/pantalla-5.png)
+
+### Dialogo agregar foto
+![alt text](Mockups/pantalla-6.png)
+
+### Dialogo eliminar tienda
+![alt text](Mockups/pantalla-7.png)
