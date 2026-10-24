@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeekFinder</string>
+    <string name="MsgTextNoStores_Main">No stores found</string>
+    <string name="MsgTextNoStores_StoreList">No stores found</string>
+    <string name="MsgTextNoReviews_StoreDetail">No reviews yet</string>
+    <string name="MsgTextNotFound_StoreDetail">Store not found</string>
+    <string name="MsgTextDelete_StoreDetail">Store deleted</string>
+    <string name="MsgTextDeleteError_StoreDetail">Error when deleting</string>
+    <string name="MsgTextSave_StoreForm">Store saved</string>
+    <string name="MsgTextSaveError_StoreForm">Error when saving</string>
+    <string name="MsgTextNameError_StoreForm">Enter a valid name</string>
+    <string name="MsgTextPhoneError_StoreForm">Enter a valid phone number</string>
+    <string name="MsgTextHoursError_StoreForm">Enter the opening hours</string>
+    <string name="MsgTextLocationError_StoreForm">Select a valid location</string>
+    <string name="MsgTextPublish_ReviewForm">Review published</string>
+    <string name="MsgTextPublishError_ReviewForm">Error when publishing</string>
+    <string name="MsgTextRatingError_ReviewForm">Select a rating from 1 to 5</string>
+    <string name="MsgTextPriceError_ReviewForm">Enter a price greater than 0</string>
+</resources>
