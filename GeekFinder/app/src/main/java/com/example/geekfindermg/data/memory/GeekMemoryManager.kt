@@ -1,11 +1,6 @@
 package com.example.geekfindermg.data.memory
 
 import com.example.geekfindermg.domain.repository.IGeekRepository
-import com.example.geekfindermg.domain.model.Store
-import com.example.geekfindermg.domain.model.StoreFilter
-import com.example.geekfindermg.domain.model.Review
-import com.example.geekfindermg.domain.model.PriceLevel
-import com.example.geekfindermg.domain.model.StoreCategory
 
 class GeekMemoryManager: IGeekRepository {
 
