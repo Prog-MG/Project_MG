@@ -1,0 +1,66 @@
+<resources>
+    <string name="TextTitle_Main">Geek Finder</string>
+    <string name="TextSearchStore_Main">Buscar tienda</string>
+    <string name="btnTextSearch_Main">Buscar</string>
+    <string name="btnTextViewStore_Main">Ver tienda</string>
+    <string name="btnTextNavMap_Main">Mapa</string>
+    <string name="btnTextNavList_Main">Lista</string>
+    <string name="btnTextNavAdd_Main">Agregar</string>
+
+    <string name="TextTitle_StoreList">Lista de tiendas</string>
+    <string name="btnTextAll_StoreList">Todas</string>
+    <string name="btnTextVideoGames_StoreList">Videojuegos</string>
+    <string name="btnTextFigures_StoreList">Figuras</string>
+    <string name="btnTextCards_StoreList">Cartas</string>
+    <string name="TextPriceLevel_StoreList">Nivel de precio</string>
+    <string name="TextPriceLow_StoreList">Bajo</string>
+    <string name="TextPriceMedium_StoreList">Medio</string>
+    <string name="TextPriceHigh_StoreList">Alto</string>
+    <string name="TextMinRating_StoreList">Calificación mínima</string>
+
+    <string name="TextTitle_StoreDetail">Detalle de tienda</string>
+    <string name="TextHours_StoreDetail">Horario</string>
+    <string name="TextPhone_StoreDetail">Teléfono</string>
+    <string name="TextReviews_StoreDetail">Reseñas</string>
+    <string name="btnTextViewOnMap_StoreDetail">Ver en mapa</string>
+    <string name="btnTextEdit_StoreDetail">Editar</string>
+    <string name="btnTextDelete_StoreDetail">Eliminar</string>
+    <string name="btnTextWriteReview_StoreDetail">Escribir reseña</string>
+    <string name="DialogTextTitleDelete_StoreDetail">¿Eliminar tienda?</string>
+    <string name="DialogTextMessageDelete_StoreDetail">Esta acción no se puede deshacer</string>
+    <string name="btnDialogDelete_StoreDetail">Eliminar</string>
+    <string name="btnDialogCancel_StoreDetail">Cancelar</string>
+
+    <string name="TextTitle_StoreForm">Formulario de tienda</string>
+    <string name="TextPhoto_StoreForm">Foto de la tienda</string>
+    <string name="TextName_StoreForm">Nombre</string>
+    <string name="TextType_StoreForm">Tipo de tienda</string>
+    <string name="TextCategoryVideoGames_StoreForm">Videojuegos</string>
+    <string name="TextCategoryFigures_StoreForm">Figuras</string>
+    <string name="TextCategoryCards_StoreForm">Cartas</string>
+    <string name="TextPriceLevel_StoreForm">Nivel de precio</string>
+    <string name="TextPriceLow_StoreForm">Bajo</string>
+    <string name="TextPriceMedium_StoreForm">Medio</string>
+    <string name="TextPriceHigh_StoreForm">Alto</string>
+    <string name="TextHours_StoreForm">Horario</string>
+    <string name="TextPhone_StoreForm">Teléfono</string>
+    <string name="btnTextLocation_StoreForm">Usar mi ubicación</string>
+    <string name="btnTextSave_StoreForm">Guardar</string>
+    <string name="btnTextCancel_StoreForm">Cancelar</string>
+    <string name="DialogTextTitleAddPhoto_StoreForm">Agregar foto</string>
+    <string name="btnDialogTakePhoto_StoreForm">Tomar foto</string>
+    <string name="btnDialogGallery_StoreForm">Elegir de la galería</string>
+    <string name="btnDialogCancelPhoto_StoreForm">Cancelar</string>
+
+    <string name="TextTitle_ReviewForm">Nueva reseña</string>
+    <string name="TextRating_ReviewForm">Calificación</string>
+    <string name="TextComment_ReviewForm">Comentario</string>
+    <string name="TextPricePaid_ReviewForm">Precio pagado</string>
+    <string name="TextItemPhoto_ReviewForm">Foto del artículo comprado</string>
+    <string name="btnTextPublish_ReviewForm">Publicar reseña</string>
+    <string name="btnTextCancel_ReviewForm">Cancelar</string>
+    <string name="DialogTextTitleAddPhoto_ReviewForm">Agregar foto</string>
+    <string name="btnDialogTakePhoto_ReviewForm">Tomar foto</string>
+    <string name="btnDialogGallery_ReviewForm">Elegir de la galería</string>
+    <string name="btnDialogCancelPhoto_ReviewForm">Cancelar</string>
+</resources>
