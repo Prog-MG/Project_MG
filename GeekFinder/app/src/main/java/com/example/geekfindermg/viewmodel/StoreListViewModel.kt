@@ -4,27 +4,33 @@ import androidx.lifecycle.ViewModel
 import com.example.geekfindermg.domain.model.Store
 import com.example.geekfindermg.domain.model.StoreFilter
 import com.example.geekfindermg.domain.model.ViewMode
-import kotlinx.coroutines.flow.MutableStateFlow
+import com.example.geekfindermg.domain.repository.IGeekRepository
 
 class StoreListViewModel(private val repository: IGeekRepository) : ViewModel() {
-    val stores = MutableStateFlow<List<Store>>(emptyList())
-    val filter = MutableStateFlow(StoreFilter())
-    val viewMode = MutableStateFlow(ViewMode.MAP)
-    val selectedStore = MutableStateFlow<Store?>(null)
 
-    init { loadStores() }
+    var stores: List<Store> = emptyList()
+    var filter: StoreFilter = StoreFilter()
+    var viewMode: ViewMode = ViewMode.MAP
+    var selectedStore: Store? = null
 
-    fun loadStores() {
-        stores.value = repository.searchStores(filter.value)
-    }
-
-    fun updateFilter(newFilter: StoreFilter) {
-        filter.value = newFilter
+    init {
         loadStores()
     }
 
-    fun setViewMode(mode: ViewMode) { viewMode.value = mode }
+    fun loadStores() {
+        stores = repository.searchStores(filter)
+    }
 
-    fun selectStore(store: Store?) { selectedStore.value = store }
+    fun updateFilter(newFilter: StoreFilter) {
+        filter = newFilter
+        loadStores()
+    }
 
+    fun setViewMode(mode: ViewMode) {
+        viewMode = mode
+    }
+
+    fun selectStore(store: Store?) {
+        selectedStore = store
+    }
 }

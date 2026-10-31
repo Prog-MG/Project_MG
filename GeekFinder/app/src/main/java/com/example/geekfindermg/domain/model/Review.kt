@@ -1,8 +1,8 @@
 package com.example.geekfindermg.domain.model
 
 data class Review(
-    val id: Int,
-    val storeId: Int,
+    val id: Long,
+    val storeId: Long,
     val authorName: String,
     val rating: Int,
     val comment: String,

@@ -1,7 +1,7 @@
 package com.example.geekfindermg.domain.model
 
 data class Store(
-    val id: Int,
+    val id: Long,
     val name: String,
     val category: StoreCategory,
     val priceLevel: PriceLevel,

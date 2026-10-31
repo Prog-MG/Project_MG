@@ -2,6 +2,7 @@ package com.example.geekfindermg.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.geekfindermg.domain.repository.IGeekRepository
 
 class ViewModelFactory (private val repository: IGeekRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

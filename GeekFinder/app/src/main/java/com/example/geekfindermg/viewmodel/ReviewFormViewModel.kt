@@ -1,35 +1,41 @@
 package com.example.geekfindermg.viewmodel
 
 import androidx.lifecycle.ViewModel
+import com.example.geekfindermg.Util.util
 import com.example.geekfindermg.domain.model.Review
-import kotlinx.coroutines.flow.MutableStateFlow
+import com.example.geekfindermg.domain.repository.IGeekRepository
 
 class ReviewFormViewModel(private val repository: IGeekRepository) : ViewModel() {
-    val rating = MutableStateFlow(0)
-    val comment = MutableStateFlow("")
-    val pricePaid = MutableStateFlow("")
-    val itemPhotoUri = MutableStateFlow<String?>(null)
 
-    val ratingError = MutableStateFlow(false)
-    val priceError = MutableStateFlow(false)
+    var rating: Int = 0
+    var comment: String = ""
+    var pricePaid: String = ""
+    var itemPhotoUri: String? = null
 
-    fun save(storeId: Int, authorName: String): Boolean {
-        val price = pricePaid.value.toDoubleOrNull() ?: 0.0
-        ratingError.value = !Validations.isRatingValid(rating.value)
-        priceError.value = !Validations.isPriceValid(price)
-        if (ratingError.value || priceError.value) return false
+    var ratingError: Boolean = false
+    var priceError: Boolean = false
 
-        repository.addReview(
-            Review(
-                id = 0,
-                storeId = storeId,
-                authorName = authorName,
-                rating = rating.value,
-                comment = comment.value,
-                pricePaid = price,
-                itemPhotoUri = itemPhotoUri.value
+    fun save(storeId: Long, authorName: String) {
+        try {
+            val price = pricePaid.toDoubleOrNull() ?: 0.0
+            ratingError = !util.Validations.isValidRating(rating)
+            priceError = !util.Validations.isValidRating(price.toInt())
+            if (ratingError || priceError)
+                throw Exception("The rating or the price paid is not valid.")
+
+            repository.addReview(
+                Review(
+                    id = 0L,
+                    storeId = storeId,
+                    authorName = authorName,
+                    rating = rating,
+                    comment = comment,
+                    pricePaid = price,
+                    itemPhotoUri = itemPhotoUri
+                )
             )
-        )
-        return true
+        } catch (e: Exception) {
+            throw e
+        }
     }
 }
