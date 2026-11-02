@@ -7,4 +7,92 @@
     android:layout_height="match_parent"
     tools:context=".ReviewActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textTitle_Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/TextTitle_ReviewForm"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textName_Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nombre de tienda"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textRate_Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/TextRating_ReviewForm" />
+
+        <RatingBar
+            android:id="@+id/rate_Review"
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+
+        <TextView
+            android:id="@+id/textComment_Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/TextComment_ReviewForm" />
+
+        <EditText
+            android:id="@+id/txtComment_Review"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minLines="4" />
+
+        <TextView
+            android:id="@+id/textPrice_Review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/TextPricePaid_ReviewForm" />
+
+        <EditText
+            android:id="@+id/txtPrice_Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/img_Review"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/btnPublish_Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/btnTextPublish_ReviewForm" />
+
+        <Button
+            android:id="@+id/btnCancel_Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/btnTextCancel_ReviewForm" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
