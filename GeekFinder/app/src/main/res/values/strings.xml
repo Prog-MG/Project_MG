@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">GeekFinder</string>
     <string name="TextTitle_Main">Geek Finder</string>
     <string name="TextSearchStore_Main">Buscar tienda</string>
     <string name="btnTextSearch_Main">Buscar</string>
@@ -6,7 +7,7 @@
     <string name="btnTextNavMap_Main">Mapa</string>
     <string name="btnTextNavList_Main">Lista</string>
     <string name="btnTextNavAdd_Main">Agregar</string>
-
+    <string name="MsgTextNoStores_Main">No se encontraron tiendas</string>
     <string name="TextTitle_StoreList">Lista de tiendas</string>
     <string name="btnTextAll_StoreList">Todas</string>
     <string name="btnTextVideoGames_StoreList">Videojuegos</string>
@@ -17,20 +18,23 @@
     <string name="TextPriceMedium_StoreList">Medio</string>
     <string name="TextPriceHigh_StoreList">Alto</string>
     <string name="TextMinRating_StoreList">Calificación mínima</string>
-
+    <string name="MsgTextNoStores_StoreList">No se encontraron tiendas</string>
     <string name="TextTitle_StoreDetail">Detalle de tienda</string>
     <string name="TextHours_StoreDetail">Horario</string>
     <string name="TextPhone_StoreDetail">Teléfono</string>
-    <string name="TextReviews_StoreDetail">Reseñas</string>
     <string name="btnTextViewOnMap_StoreDetail">Ver en mapa</string>
     <string name="btnTextEdit_StoreDetail">Editar</string>
     <string name="btnTextDelete_StoreDetail">Eliminar</string>
+    <string name="TextReviews_StoreDetail">Reseñas</string>
     <string name="btnTextWriteReview_StoreDetail">Escribir reseña</string>
     <string name="DialogTextTitleDelete_StoreDetail">¿Eliminar tienda?</string>
     <string name="DialogTextMessageDelete_StoreDetail">Esta acción no se puede deshacer</string>
     <string name="btnDialogDelete_StoreDetail">Eliminar</string>
     <string name="btnDialogCancel_StoreDetail">Cancelar</string>
-
+    <string name="MsgTextNoReviews_StoreDetail">Aún no hay reseñas</string>
+    <string name="MsgTextNotFound_StoreDetail">Tienda no encontrada</string>
+    <string name="MsgTextDelete_StoreDetail">Tienda eliminada</string>
+    <string name="MsgTextDeleteError_StoreDetail">Error al eliminar</string>
     <string name="TextTitle_StoreForm">Formulario de tienda</string>
     <string name="TextPhoto_StoreForm">Foto de la tienda</string>
     <string name="TextName_StoreForm">Nombre</string>
@@ -51,7 +55,12 @@
     <string name="btnDialogTakePhoto_StoreForm">Tomar foto</string>
     <string name="btnDialogGallery_StoreForm">Elegir de la galería</string>
     <string name="btnDialogCancelPhoto_StoreForm">Cancelar</string>
-
+    <string name="MsgTextSave_StoreForm">Tienda guardada</string>
+    <string name="MsgTextSaveError_StoreForm">Error al guardar</string>
+    <string name="MsgTextNameError_StoreForm">Ingresa un nombre válido</string>
+    <string name="MsgTextPhoneError_StoreForm">Ingresa un teléfono válido</string>
+    <string name="MsgTextHoursError_StoreForm">Ingresa el horario</string>
+    <string name="MsgTextLocationError_StoreForm">Selecciona una ubicación válida</string>
     <string name="TextTitle_ReviewForm">Nueva reseña</string>
     <string name="TextRating_ReviewForm">Calificación</string>
     <string name="TextComment_ReviewForm">Comentario</string>
@@ -63,4 +72,8 @@
     <string name="btnDialogTakePhoto_ReviewForm">Tomar foto</string>
     <string name="btnDialogGallery_ReviewForm">Elegir de la galería</string>
     <string name="btnDialogCancelPhoto_ReviewForm">Cancelar</string>
+    <string name="MsgTextPublish_ReviewForm">Reseña publicada</string>
+    <string name="MsgTextPublishError_ReviewForm">Error al publicar</string>
+    <string name="MsgTextRatingError_ReviewForm">Selecciona una calificación de 1 a 5</string>
+    <string name="MsgTextPriceError_ReviewForm">Ingresa un precio mayor a 0</string>
 </resources>

@@ -22,6 +22,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".StoreDetailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".StoreFormActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".StoreListActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
