@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">GeekFinder</string>
+    <string name="TextTitle_Main">Geek Finder</string>
+    <string name="TextSearchStore_Main">Search store</string>
+    <string name="btnTextSearch_Main">Search</string>
+    <string name="btnTextViewStore_Main">View store</string>
+    <string name="btnTextNavMap_Main">Map</string>
+    <string name="btnTextNavList_Main">List</string>
+    <string name="btnTextNavAdd_Main">Add</string>
     <string name="MsgTextNoStores_Main">No stores found</string>
+    <string name="TextTitle_StoreList">Store list</string>
+    <string name="btnTextAll_StoreList">All</string>
+    <string name="btnTextVideoGames_StoreList">Video games</string>
+    <string name="btnTextFigures_StoreList">Figures</string>
+    <string name="btnTextCards_StoreList">Cards</string>
+    <string name="TextPriceLevel_StoreList">Price level</string>
+    <string name="TextPriceLow_StoreList">Low</string>
+    <string name="TextPriceMedium_StoreList">Medium</string>
+    <string name="TextPriceHigh_StoreList">High</string>
+    <string name="TextMinRating_StoreList">Minimum rating</string>
     <string name="MsgTextNoStores_StoreList">No stores found</string>
     <string name="TextTitle_StoreDetail">Store details</string>
     <string name="TextHours_StoreDetail">Hours</string>
@@ -23,7 +40,13 @@
     <string name="TextPhoto_StoreForm">Store photo</string>
     <string name="TextName_StoreForm">Name</string>
     <string name="TextType_StoreForm">Store type</string>
+    <string name="TextCategoryVideoGames_StoreForm">Video games</string>
+    <string name="TextCategoryFigures_StoreForm">Figures</string>
+    <string name="TextCategoryCards_StoreForm">Cards</string>
     <string name="TextPriceLevel_StoreForm">Price level</string>
+    <string name="TextPriceLow_StoreForm">Low</string>
+    <string name="TextPriceMedium_StoreForm">Medium</string>
+    <string name="TextPriceHigh_StoreForm">High</string>
     <string name="TextHours_StoreForm">Hours</string>
     <string name="TextPhone_StoreForm">Phone</string>
     <string name="btnTextLocation_StoreForm">Use my location</string>
