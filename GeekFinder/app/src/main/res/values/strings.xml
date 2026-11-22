@@ -7,6 +7,7 @@
     <string name="btnTextNavMap_Main">Mapa</string>
     <string name="btnTextNavList_Main">Lista</string>
     <string name="btnTextNavAdd_Main">Agregar</string>
+    <string name="btnTextEditSearch_Main">Buscar y editar</string>
     <string name="MsgTextNoStores_Main">No se encontraron tiendas</string>
     <string name="TextTitle_StoreList">Lista de tiendas</string>
     <string name="btnTextAll_StoreList">Todas</string>
@@ -52,6 +53,7 @@
     <string name="btnTextSave_StoreForm">Guardar</string>
     <string name="btnTextCancel_StoreForm">Cancelar</string>
     <string name="DialogTextTitleAddPhoto_StoreForm">Agregar foto</string>
+    <string name="DialogTextUpdateQuestion_StoreForm">¿Desea actualizar la tienda?</string>
     <string name="btnDialogTakePhoto_StoreForm">Tomar foto</string>
     <string name="btnDialogGallery_StoreForm">Elegir de la galería</string>
     <string name="btnDialogCancelPhoto_StoreForm">Cancelar</string>
@@ -61,6 +63,11 @@
     <string name="MsgTextPhoneError_StoreForm">Ingresa un teléfono válido</string>
     <string name="MsgTextHoursError_StoreForm">Ingresa el horario</string>
     <string name="MsgTextLocationError_StoreForm">Selecciona una ubicación válida</string>
+    <string name="MsgTextTakePhoto_StoreForm">Tomar foto (no implementado)</string>
+    <string name="MsgTextGallery_StoreForm">Elegir de galería (no implementado)</string>
+    <string name="MsgTextSaveSuccess_StoreForm">Tienda guardada</string>
+    <string name="MsgTextUpdateSuccess_StoreForm">Tienda actualizada</string>
+    <string name="MsgTextNotFound_StoreForm">Tienda no encontrada</string>
     <string name="TextTitle_ReviewForm">Nueva reseña</string>
     <string name="TextRating_ReviewForm">Calificación</string>
     <string name="TextComment_ReviewForm">Comentario</string>
@@ -76,9 +83,4 @@
     <string name="MsgTextPublishError_ReviewForm">Error al publicar</string>
     <string name="MsgTextRatingError_ReviewForm">Selecciona una calificación de 1 a 5</string>
     <string name="MsgTextPriceError_ReviewForm">Ingresa un precio mayor a 0</string>
-
-    <string name="MsgTextSaveSuccess_StoreForm">Tienda guardada</string>
-    <string name="MsgTextUpdateSuccess_StoreForm">Tienda actualizada</string>
-    <string name="DialogTextUpdateQuestion_StoreForm">¿Desea actualizar la tienda?</string>
-    <string name="MsgTextNotFound_StoreForm">Tienda no encontrada</string>
 </resources>

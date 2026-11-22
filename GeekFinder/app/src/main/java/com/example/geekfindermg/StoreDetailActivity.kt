@@ -94,11 +94,6 @@ class StoreDetailActivity : AppCompatActivity() {
     }
 
     private fun showDeleteDialog() {
-        AlertDialog.Builder(this)
-            .setTitle(getString(R.string.DialogTextTitleDelete_StoreDetail))
-            .setMessage(getString(R.string.DialogTextMessageDelete_StoreDetail))
-            .setPositiveButton(getString(R.string.btnDialogDelete_StoreDetail)) { _, _ -> deleteStore() }
-            .setNegativeButton(getString(R.string.btnDialogCancel_StoreDetail), null)
-            .show()
+        DeleteStoreDialog(this) { deleteStore() }.show()
     }
 }

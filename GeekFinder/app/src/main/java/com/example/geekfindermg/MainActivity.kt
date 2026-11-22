@@ -34,12 +34,38 @@ class MainActivity : AppCompatActivity() {
         val btnSearch = findViewById<Button>(R.id.btnSearch)
         val btnViewStore = findViewById<Button>(R.id.btnViewStore)
         val btnAdd = findViewById<Button>(R.id.btnAdd)
+        val btnEditSearch = findViewById<Button>(R.id.btnEditSearch)
+
 
         btnSearch.setOnClickListener { openStore() }
         btnViewStore.setOnClickListener { openStore() }
+        btnEditSearch.setOnClickListener { openStoreEdit() }
 
         btnAdd.setOnClickListener {
             startActivity(Intent(this, StoreFormActivity::class.java))
+        }
+    }
+
+
+    private fun openStoreDetail() {
+        val found = searchStore()
+        if (found == null) {
+            Toast.makeText(this, getString(R.string.MsgTextNotFound_StoreForm), Toast.LENGTH_LONG).show()
+        } else {
+            val intent = Intent(this, StoreDetailActivity::class.java)
+            intent.putExtra("STORE_ID", found.id)
+            startActivity(intent)
+        }
+    }
+
+    private fun openStoreEdit() {
+        val found = searchStore()
+        if (found == null) {
+            Toast.makeText(this, getString(R.string.MsgTextNotFound_StoreForm), Toast.LENGTH_LONG).show()
+        } else {
+            val intent = Intent(this, StoreFormActivity::class.java)
+            intent.putExtra("STORE_ID", found.id)
+            startActivity(intent)
         }
     }
 
@@ -59,5 +85,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("STORE_ID", found.id)
             startActivity(intent)
         }
+    }
+
+    private fun searchStore() = run {
+        viewModel.updateFilter(StoreFilter(query = edtSearch.text.toString().trim()))
+        viewModel.stores.firstOrNull()
     }
 }

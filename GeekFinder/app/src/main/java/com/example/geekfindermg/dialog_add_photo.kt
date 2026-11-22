@@ -5,16 +5,35 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.app.Dialog
+import android.content.Context
+import android.widget.Button
 
-class dialog_add_photo : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+class AddPhotoDialog(
+    context: Context,
+    private val onTakePhoto: () -> Unit,
+    private val onChooseGallery: () -> Unit
+) : Dialog(context) {
+
+    init {
         setContentView(R.layout.activity_dialog_add_photo)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnTakePhoto = findViewById<Button>(R.id.btnTakePhoto)
+        val btnGallery   = findViewById<Button>(R.id.btnGallery)
+        val btnCancel    = findViewById<Button>(R.id.btnCancelPhoto)
+
+        btnTakePhoto.setOnClickListener {
+            dismiss()
+            onTakePhoto()
+        }
+
+        btnGallery.setOnClickListener {
+            dismiss()
+            onChooseGallery()
+        }
+
+        btnCancel.setOnClickListener {
+            dismiss()
         }
     }
 }

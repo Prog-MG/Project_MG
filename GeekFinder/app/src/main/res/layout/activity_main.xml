@@ -64,6 +64,12 @@
             android:text="@string/btnTextSearch_Main" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnEditSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnTextEditSearch_Main" />
+
     <FrameLayout
         android:id="@+id/mapContainer"
         android:layout_width="match_parent"
