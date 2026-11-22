@@ -1,5 +1,9 @@
 package com.example.geekfindermg.domain.repository
 
+import com.example.geekfindermg.domain.model.Review
+import com.example.geekfindermg.domain.model.Store
+import com.example.geekfindermg.domain.model.StoreFilter
+
 interface IGeekRepository {
 
     // Stores

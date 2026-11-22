@@ -77,4 +77,9 @@
     <string name="MsgTextPublishError_ReviewForm">Error when publishing</string>
     <string name="MsgTextRatingError_ReviewForm">Select a rating from 1 to 5</string>
     <string name="MsgTextPriceError_ReviewForm">Enter a price greater than 0</string>
+
+    <string name="MsgTextSaveSuccess_StoreForm">Store saved</string>
+    <string name="MsgTextUpdateSuccess_StoreForm">Store updated</string>
+    <string name="DialogTextUpdateQuestion_StoreForm">Do you want to update the store?</string>
+    <string name="MsgTextNotFound_StoreForm">Store not found</string>
 </resources>
