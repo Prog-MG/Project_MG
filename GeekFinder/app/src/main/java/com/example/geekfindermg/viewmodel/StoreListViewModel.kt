@@ -26,7 +26,7 @@ class StoreListViewModel(private val repository: IGeekRepository) : ViewModel() 
         loadStores()
     }
 
-    fun setViewMode(mode: ViewMode) {
+    fun changeViewMode(mode: ViewMode) {
         viewMode = mode
     }
 
