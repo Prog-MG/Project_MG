@@ -1,8 +1,16 @@
 package com.example.geekfindermg.data.memory
 
+import com.example.geekfindermg.Util.util
+import com.example.geekfindermg.domain.model.Review
+import com.example.geekfindermg.domain.model.Store
+import com.example.geekfindermg.domain.model.StoreFilter
 import com.example.geekfindermg.domain.repository.IGeekRepository
 
 class GeekMemoryManager: IGeekRepository {
+
+    companion object {
+        val instance = GeekMemoryManager()
+    }
 
     private val stores = mutableListOf<Store>()
     private val reviews = mutableListOf<Review>()
@@ -118,7 +126,7 @@ class GeekMemoryManager: IGeekRepository {
 
         for (i in stores.indices) {
             if (stores[i].id == storeId) {
-                stores[i] = stores[i].copy(averageRating = Rating.average(ratings))
+                stores[i] = stores[i].copy(averageRating = util.Rating.average(ratings))
             }
         }
     }
