@@ -154,11 +154,16 @@ class StoreFormActivity : AppCompatActivity() {
     }
 
     private fun showUpdateDialog() {
-        AlertDialog.Builder(this)
-            .setMessage(getString(R.string.DialogTextUpdateQuestion_StoreForm))
-            .setPositiveButton(getString(R.string.btnTextSave_StoreForm)) { _, _ -> saveStore() }
-            .setNegativeButton(getString(R.string.btnTextCancel_StoreForm), null)
-            .show()
+        dialog_update_store(this) { saveStore() }.show()
+    }
+
+    //preliminated BTD use
+    private fun showAddPhotoDialog() {
+        AddPhotoDialog(
+            context         = this,
+            onTakePhoto     = { Toast.makeText(this, getString(R.string.MsgTextTakePhoto_StoreForm), Toast.LENGTH_SHORT).show() },
+            onChooseGallery = { Toast.makeText(this, getString(R.string.MsgTextGallery_StoreForm), Toast.LENGTH_SHORT).show() }
+        ).show()
     }
 
     private fun cleanScreen() {

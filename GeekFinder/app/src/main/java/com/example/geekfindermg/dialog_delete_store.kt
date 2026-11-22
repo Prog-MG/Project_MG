@@ -5,16 +5,28 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.app.Dialog
+import android.content.Context
+import android.widget.Button
 
-class dialog_delete_store : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+class DeleteStoreDialog(
+    context: Context,
+    private val onConfirm: () -> Unit
+) : Dialog(context) {
+
+    init {
         setContentView(R.layout.activity_dialog_delete_store)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnConfirm = findViewById<Button>(R.id.btnConDelete)
+        val btnCancel  = findViewById<Button>(R.id.btnCancelDelete)
+
+        btnConfirm.setOnClickListener {
+            dismiss()
+            onConfirm()
+        }
+
+        btnCancel.setOnClickListener {
+            dismiss()
         }
     }
 }
